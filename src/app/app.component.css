@@ -1,0 +1,31 @@
+mat-toolbar {
+  background-color: #3c6382;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.mat-fab {
+  background-color: #60a3bc;
+  color: white;
+}
+
+/*
+.example-icon {
+  
+}
+*/
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.menu-list {
+    padding-left: 30px;
+    display: flex;
+}
+
+.item-menu {
+    padding-right: 20px;
+    align-items: center;
+    display: flex;
+}

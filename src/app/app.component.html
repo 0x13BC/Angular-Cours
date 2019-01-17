@@ -1,0 +1,51 @@
+<mat-toolbar>
+    <span>Bunny Events</span>
+
+    <div class="menu-list">
+      <div class="item-menu">
+        <a [routerLink]="['/home']" mat-fab>
+            <mat-icon>home</mat-icon>
+            <!--
+                Accueil
+            -->
+        </a>
+      </div>
+      <div class="item-menu">
+          <a [routerLink]="['/events/list']" mat-fab >
+              <mat-icon>event</mat-icon>
+              <!--
+                    Evénements
+              -->
+          </a>
+      </div>
+    </div>
+
+    <span class="example-spacer"></span>
+    <div class="item-menu">
+        <a [routerLink]="['/auth/login']" mat-fab >
+            <mat-icon>power_settings_new</mat-icon>
+            <!--
+                Login
+            -->
+        </a>
+    </div>
+
+    <div class="item-menu">
+      <span>Paul</span>
+      <a mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </a>
+        <mat-menu #menu="matMenu">
+          <a [routerLink]="['/user/edit']" mat-menu-item >
+            <mat-icon>account_box</mat-icon>
+            <span>profil</span>
+          </a>
+          <a mat-menu-item >
+            <mat-icon color="warn">power_settings_new</mat-icon>
+            <span>Logout</span>
+          </a>
+        </mat-menu>
+    </div>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
