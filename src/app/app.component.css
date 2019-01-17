@@ -9,6 +9,11 @@ mat-toolbar {
   color: white;
 }
 
+.logo {
+  width: 64px;
+  height: auto;
+}
+
 /*
 .example-icon {
   
