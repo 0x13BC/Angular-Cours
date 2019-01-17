@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { EditComponent } from './edit/edit.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
-  declarations: [EditComponent],
+  declarations: [EditComponent, SignupComponent],
   imports: [
   ]
 })
