@@ -7,6 +7,7 @@ import { ListEventComponent } from './event/list-event/list-event.component';
 import { LoginComponent } from './auth/login/login.component';
 import { EditComponent } from './user/edit/edit.component';
 import { NotFoundComponent } from './other/not-found/not-found.component';
+import { SignupComponent } from './user/signup/signup.component';
 
 
 
@@ -29,6 +30,7 @@ export const routes: Routes = [
         path: 'user',
         children: [
             {path:'edit', component: EditComponent },
+            { path: 'signup', component: SignupComponent },
         ],
     },
     { path: 'notfound', component: NotFoundComponent },

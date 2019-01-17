@@ -1,8 +1,29 @@
 <h1>Nouvel utilisateur</h1>
 
 <!--
-  <form #formUser="ngForm">
+-->
+  <form #formUser="ngForm" (ngSubmit)="onSubmit(formUser,$event)">
+
+<mat-expansion-panel [hideToggle]="false">
+
+    <mat-expansion-panel-header>
+        <mat-panel-title>Identifiants</mat-panel-title>
+        <mat-panel-description></mat-panel-description>
+    </mat-expansion-panel-header>
     
+    Content that gets shown when expanded
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input type="text" matInput placeholder="">
+      </mat-form-field>
+      
+      <mat-form-field>
+        <mat-label>Mot de passe</mat-label>
+        <input type="password" matInput placeholder="">
+      </mat-form-field>
+</mat-expansion-panel>
+
+    
+    <button mat-button type="submit">Enregistrer</button>
   </form>
   
--->
