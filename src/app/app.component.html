@@ -1,16 +1,16 @@
 <mat-toolbar>
    
-<img class="logo" src="assets/img/android-chrome-192x192.png">
-    <span>Bunny Events</span>
-
+    
     <div class="menu-list">
-      <div class="item-menu">
-        <a [routerLink]="['/home']" mat-fab>
+        <div class="item-menu">
+            <a [routerLink]="['/home']">
+                <img class="logo" src="assets/img/android-chrome-192x192.png">
+            </a>
+                <span> Bunny Events</span>
+              <!--
             <mat-icon>home</mat-icon>
-            <!--
                 Accueil
             -->
-        </a>
       </div>
       <div class="item-menu">
           <a [routerLink]="['/events/list']" mat-fab >
@@ -23,6 +23,14 @@
     </div>
     
     <span class="example-spacer"></span>
+    <div class="item-menu">
+        <a [routerLink]="['/user/list']" mat-fab>
+            <mat-icon>people</mat-icon>
+            <!--
+                        people
+                    -->
+        </a>
+    </div>
     <div class="item-menu">
         <a [routerLink]="['/user/signup']" mat-fab>
             <mat-icon>add_to_queue</mat-icon>

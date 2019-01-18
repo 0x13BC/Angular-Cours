@@ -12,6 +12,14 @@ mat-toolbar {
 .logo {
   width: 64px;
   height: auto;
+  background-color: #60a3bc;
+  border-radius: 50px;
+}
+
+.logo:hover{
+  background-color: white;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
 }
 
 /*

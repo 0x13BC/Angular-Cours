@@ -7,18 +7,18 @@
 
     <mat-form-field>
       <mat-label>Email</mat-label>
-      <input type="text" #email ngModel name="email" matInput placeholder="email" required />
+      <input type="text" #email [(ngModel)]="user.mail" email name="email" matInput placeholder="........" required />
       <mat-error>L'email est obligatoire</mat-error>
     </mat-form-field>
 
     <mat-form-field>
       <mat-label>Mot de passe</mat-label>
-      <input type="password" matInput placeholder="mot de passe" />
+      <input type="password" #password [(ngModel)]="user.password" name="password"  matInput placeholder="........" required/>
     </mat-form-field>
 
     <mat-form-field>
       <mat-label>Confirmation mot de passe</mat-label>
-      <input type="password" matInput placeholder="confirmation mot de passe" />
+      <input type="password" #matchPassword [(ngModel)]="user.matchPassword" name="matchPassword" matInput placeholder="........" required/>
     </mat-form-field>
 
   </mat-expansion-panel>
@@ -30,17 +30,17 @@
 
     <mat-form-field>
       <mat-label>Nom</mat-label>
-      <input type="text" matInput placeholder="nom" />
+      <input type="text" matInput [(ngModel)]="user.name" name="name" placeholder="........"required />
     </mat-form-field>
 
     <mat-form-field>
       <mat-label>Prénom</mat-label>
-      <input type="text" matInput placeholder="prénom" />
+      <input type="text" matInput [(ngModel)]="user.firstname" name="firstname" placeholder="........" />
     </mat-form-field>
 
   </mat-expansion-panel>
 
   <div>
-    <button mat-button type="submit" [disabled]="formUser.invalid">Enregistrer</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="formUser.invalid">Enregistrer</button>
   </div>
 </form>
